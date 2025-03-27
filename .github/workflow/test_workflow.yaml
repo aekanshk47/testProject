@@ -1,4 +1,4 @@
-name: testcheck_workflow
+name: testcheck workflow
 
 on:
   push:
@@ -11,15 +11,14 @@ on:
 
 jobs:
   hello:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
 	- name: start
 	  run: echo "started"
 	  shell: bash
   gb:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
         - name: gb
           run: echo "gb"
           shell: bash
-
