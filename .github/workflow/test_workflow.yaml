@@ -1,0 +1,25 @@
+name: testcheck_workflow
+
+on:
+  push:
+     branches:
+	- main
+  pull_request:
+     branches:
+        - main
+  workflow_dispatch
+
+jobs:
+  hello:
+    run-on: ubuntu-latest
+    steps:
+	- name: start
+	  run: echo "started"
+	  shell: bash
+  gb:
+    run-on: ubuntu-latest
+    steps:
+        - name: gb
+          run: echo "gb"
+          shell: bash
+
