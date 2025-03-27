@@ -2,23 +2,23 @@ name: testcheck workflow
 
 on:
   push:
-     branches:
-	- main
+    branches:
+      - main
   pull_request:
-     branches:
-        - main
-  workflow_dispatch
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-	- name: start
-	  run: echo "started"
-	  shell: bash
+      - name: start
+        run: echo "started"
+        shell: bash
   gb:
     runs-on: ubuntu-latest
     steps:
-        - name: gb
-          run: echo "gb"
-          shell: bash
+      - name: gb
+        run: echo "gb"
+        shell: bash
